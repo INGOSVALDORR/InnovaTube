@@ -1,9 +1,4 @@
-/* h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(88, 160, 160);
-} */
-
-/* #ibusqueda{
+#ibusqueda{
     width: 60%;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -29,8 +24,4 @@
     padding: 0 4px 0 4px;
     background-color: #D2CFCE;
 
-} */
-#busqueda{
-    margin-left:  17.5%;
-    margin-right:  17.5%;
 }
