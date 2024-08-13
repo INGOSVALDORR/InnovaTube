@@ -25,3 +25,14 @@
     background-color: #D2CFCE;
 
 }
+#titulovideo{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#busqueda{
+    margin-left: 16%;
+    margin-right: 16%;
+}
+#hrbusqueda{
+    border: 2px rgba(0, 0, 0, 0.014);
+   
+}

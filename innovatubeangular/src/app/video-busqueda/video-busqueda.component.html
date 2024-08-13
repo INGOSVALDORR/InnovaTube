@@ -1,11 +1,12 @@
-<div>
-    <input id="ibusqueda" [(ngModel)]="searchQuery" placeholder="Search for videos" />
-    <button id="bbusqueda" (click)="search()">Search</button>
+<div><div id="busqueda">
+    <input id="ibusqueda" [(ngModel)]="searchQuery" placeholder="Busqueda de videos" />
+    &nbsp;&nbsp;<button id="bbusqueda" (click)="search()">Buscar</button></div>
   </div>
+  <hr id="thbusqueda">
   <div *ngIf="videos.length > 0">
     <ul>
       <li *ngFor="let video of videos">
-        <h3>{{ video.snippet.title }}</h3>
+        <h3 id="titulovideo">{{ video.snippet.title }}</h3>
         <iframe width="560" height="315" [src]="getVideoUrl(video.id.videoId)" frameborder="0" allowfullscreen></iframe>
       </li>
     </ul>
