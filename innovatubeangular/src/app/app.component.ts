@@ -10,7 +10,5 @@ export class AppComponent {
   title = 'innovatubeangular';
   constructor(private router: Router) {}
 
-  navigateToLogin() {
-    this.router.navigate(['/login']);
-  }
+  
 }
