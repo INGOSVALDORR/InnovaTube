@@ -1,7 +1,9 @@
 use inovatube;
+
 CREATE TABLE usuarios
 (
 IdUsuario int primary key not null,
+correo varchar(120),
 nombre varchar(120),
 usuario varchar(50),
 contraseña varchar(50)
