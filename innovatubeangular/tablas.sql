@@ -6,7 +6,7 @@ IdUsuario int primary key not null,
 correo varchar(120),
 nombre varchar(120),
 usuario varchar(50),
-contraseña varchar(50)
+contrasena varchar(50)
 );
 CREATE TABLE VideosFavoritos(
 IdVideoFav int primary key not null,

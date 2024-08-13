@@ -7,11 +7,12 @@
         <!-- <img src="/src/assets/images/flecha.png"> -->
         <!-- <button> Regresar </button> -->
         <h1 class="title">Inicia sesión</h1><br><br>
-        Correo:<input type="email"><br><br>
-        Contraseña:<input type="password">
+        <form>
+        Correo:<input type="email" required><br><br>
+        Contraseña:<input type="password" required>
         <br><br>
-        <button id="blogin" (click)="navigateToVideo()">Iniciar Sesión</button><br><br>
-        <button id="bregister">Registrarse</button>
+        <button id="blogin" (click)="navigateToVideo()">Iniciar Sesión</button><br><br> </form>
+        <button id="bregister" (click)="navigateToRegistro()">Registrarse</button>
     </div>
 
 </div>

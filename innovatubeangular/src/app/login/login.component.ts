@@ -14,5 +14,8 @@ export class LoginComponent {
   navigateToVideo() {
     this.router.navigate(['/Video']);
   }
+  navigateToRegistro() {
+    this.router.navigate(['/Registro']);
+  }
 
 }

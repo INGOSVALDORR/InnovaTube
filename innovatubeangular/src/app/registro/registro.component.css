@@ -1,0 +1,64 @@
+#formulario{
+    margin: 0 auto; 
+    padding: 20px;
+    width: 30%;
+    height: 45%;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    position: absolute;
+
+    left: 43%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+ 
+}
+.title {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Fuente en negrita */
+    color: #2c3e50; /* Color del texto (puedes usar un color personalizado) */
+    text-align: center; /* Alineación del texto al centro */
+    margin-top: 20px; /* Espacio en la parte superior */
+    margin-bottom: 20px; /* Espacio en la parte inferior */
+    font-family: 'Arial', sans-serif; /* Familia de fuente */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra del texto */
+  }
+  #bregister{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+    
+}
+#bregister:hover{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+    background-color: #D2CFCE;
+
+}
+
+#bregreso{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+    
+}
+#bregreso:hover{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+    background-color: #D2CFCE;
+
+}
