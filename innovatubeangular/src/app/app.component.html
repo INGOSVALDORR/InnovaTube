@@ -6,14 +6,17 @@
   <title>InnovaTube</title>
 </head>
 <body>
+
   
-<div id="navbar">
-  <button (click)="goToInicioSesion()" id="InicioSesion">Iniciar Sesion</button>
-</div>
+
+
 
 <div id="contenido"><br><br>
-  <app-video-busqueda></app-video-busqueda>
-  
+
+  <router-outlet></router-outlet>
+
+ 
+
 </div>
 </body>
 </html>

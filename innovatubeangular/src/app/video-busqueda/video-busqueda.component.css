@@ -36,3 +36,23 @@
     border: 2px rgba(0, 0, 0, 0.014);
    
 }
+#InicioSesion{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+    margin-left: 95%;
+
+
+}
+#InicioSesion:hover{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+    background-color: #D2CFCE;
+    margin-left: 95%;
+
+}

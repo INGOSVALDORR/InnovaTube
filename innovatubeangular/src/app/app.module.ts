@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VideoBusquedaComponent } from './video-busqueda/video-busqueda.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VideoBusquedaComponent
+    VideoBusquedaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

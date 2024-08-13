@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { YoutubeService } from '../youtube.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-video-busqueda',
@@ -9,10 +10,11 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class VideoBusquedaComponent {
 
+
   videos: any[] = [];
   searchQuery: string = '';
 
-  constructor(private youtubeService: YoutubeService, private sanitizer: DomSanitizer) { }
+  constructor(private youtubeService: YoutubeService, private sanitizer: DomSanitizer, private router: Router) { }
 
   search() {
     this.youtubeService.searchVideos(this.searchQuery).subscribe(response => {
@@ -21,6 +23,9 @@ export class VideoBusquedaComponent {
   }
   getVideoUrl(videoId: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${videoId}`);
+  }
+  navigateToLogin() {
+    this.router.navigate(['/login']);
   }
 
 
