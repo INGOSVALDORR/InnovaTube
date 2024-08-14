@@ -2,6 +2,7 @@
 <!-- <header><div id="navbar">
   <button  id="InicioSesion">Inicia Sesión</button>
 </div></header> -->
+<div style="background-color: linear-gradient(176deg, rgba(134,130,200,1) 0%, rgba(255,226,250,1) 35%, rgba(189,247,247,1) 95%, rgba(143,215,255,1) 100%);">
 <div><div id="busqueda">
     <input id="ibusqueda" [(ngModel)]="searchQuery" placeholder="Busqueda de videos" />
     &nbsp;&nbsp;<button id="bbusqueda" (click)="search()">Buscar</button></div>
@@ -12,6 +13,12 @@
       <li *ngFor="let video of videos">
         <h3 id="titulovideo">{{ video.snippet.title }}</h3>
         <iframe width="560" height="315" [src]="getVideoUrl(video.id.videoId)" frameborder="0" allowfullscreen></iframe>
+        &nbsp;&nbsp;&nbsp;
+        <form>
+          <!-- <input type="hidden" required id="urlfav" name="urlfav" [(ngModel)]="nuevoDato.urlfav" value="getVideoURL(video.id.videoId)"> -->
+        <button type="submit" id="fav" > Agregar a favorito ✰ </button>
+        </form>
       </li>
     </ul>
   </div>
+</div>

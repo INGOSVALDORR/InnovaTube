@@ -6,14 +6,23 @@
        
         <!-- <img src="/src/assets/images/flecha.png"> -->
         <!-- <button> Regresar </button> --><button (click)="navigateToLogin()" id="bregreso">Regresar</button><br>
-         <form #formularioRegistro="ngForm" (ngSubmit)="insertar(formularioRegistro.value)">
+         <!-- <form #formularioRegistro="ngForm" (ngSubmit)="insertar(formularioRegistro.value)">
         <h1 class="title">Registro</h1><br><br>
         Correo:<input type="email" required id="correo" name="correo" ngModel><br><br>
         Nombre:<input type="text" required id="nombre" name="nombre" ngModel><br><br>
         Usuario:<input type="text" required id="usuario" name="usuario" ngModel><br><br>
         Contraseña:<input type="password" required id="contrasena" name="contrasena" ngModel>
         <br><br>
-        <button id="bregister" type="submit">Registrar</button><br><br></form>
+        <button id="bregister" type="submit">Registrar</button><br><br></form> -->
+
+        <form #formularioRegistro="ngForm" (ngSubmit)="agregarDato()">
+            <h1 class="title">Registro</h1><br><br>
+            Correo:<input type="email" required id="correo" name="correo" [(ngModel)]="nuevoDato.correo"><br><br>
+            Nombre:<input type="text" required id="nombre" name="nombre" [(ngModel)]="nuevoDato.nombre"><br><br>
+            Usuario:<input type="text" required id="usuario" name="usuario" [(ngModel)]="nuevoDato.usuario"><br><br>
+            Contraseña:<input type="password" required id="contrasena" name="contrasena" [(ngModel)]="nuevoDato.contrasena">
+            <br><br>
+            <button id="bregister" type="submit">Registrar</button><br><br></form>
        
     </div>
 
